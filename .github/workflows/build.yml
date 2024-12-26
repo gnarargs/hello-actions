@@ -9,3 +9,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Print hello world
         uses: ./
+        with:
+          who-to-greet: 'Hunter'
