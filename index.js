@@ -5,3 +5,7 @@ const time = (new Date()).toTimeString();
 
 console.log(`Hello ${name}.`);
 core.setOutput('time', time);
+
+if (name === 'Hunter') {
+    core.setFailed('Bad name');
+}
