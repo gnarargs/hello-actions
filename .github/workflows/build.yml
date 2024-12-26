@@ -8,6 +8,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Print hello world
+        id: hello
         uses: ./
         with:
           who-to-greet: 'Hunter'
+      - name: Print time
+        run: echo "The time was ${{ steps.hello.outputs.time }}
