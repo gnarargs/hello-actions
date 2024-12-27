@@ -4,6 +4,7 @@
   "description": "Reference repo for writing a GitHub Action.",
   "main": "index.js",
   "scripts": {
+    "local-action": "npx local-action . main.js .env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
