@@ -4,6 +4,7 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     name: Say hello
+    environment: dev
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -14,3 +15,5 @@ jobs:
           who-to-greet: 'Bob'
       - name: Print time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Print env
+        run: echo $APP_ENV
