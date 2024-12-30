@@ -33,4 +33,4 @@ jobs:
     needs: [hello-world]
     steps:
       - name: Print env
-        run: echo "Env is $APP_ENV"
+        run: echo "Env is ${{ vars.APP_ENV }}
