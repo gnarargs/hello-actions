@@ -14,3 +14,12 @@ npm run local-action
 ```
 
 Set desired `inputs` into the action by setting `INPUT_` environment variables in the `.env`.
+
+### TODO
+
+- Set up with `act` instead of `local-actions` 
+- Add TypeScript
+- Add Jest
+- Set node version on pipeline explicitly
+- Add CI for action
+- Add eslint
