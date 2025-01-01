@@ -7,6 +7,7 @@
     "local-action": "npx local-action . main.js .env",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "package": "ncc build src/index.ts -o dist",
     "clean": "rm -rf ./dist/*"
   },
   "keywords": [],
